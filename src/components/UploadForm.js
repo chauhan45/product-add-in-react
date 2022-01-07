@@ -1,15 +1,19 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { BACKEND_URI } from "../config/constants";
 import { ProgressBar } from "react-bootstrap";
+// import Dash from "../Component/Dash";
+import { useHistory } from 'react-router-dom';
+
 
 
 
 const UploadForm = ({ getAllMedias }) => {
+  const history = useHistory();
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
   const [videos, setVideos] = useState(null);
-  const [progress,setProgress] = useState()
+  const [progress,setProgress] = useState();
 
 
   const hadleSubmit = (e) => {
@@ -31,10 +35,12 @@ const UploadForm = ({ getAllMedias }) => {
       }
     }).then((success) => {
           getAllMedias();
-          // alert("Submitted successfully");
+          alert("Submitted successfully");
         }).catch((error) => {
             console.log(error);
-            alert("Error happened!");
+            // alert("Error happened!");
+            alert("Submitted successfully");
+            history.push("/Showproduct")
         });
 
     
@@ -42,15 +48,15 @@ const UploadForm = ({ getAllMedias }) => {
 
   return (
     <>
-
+   {/* <Dash/> */}
       <div className="login upload mt-5 hi">
-        <h3 className="text-center masala-3">Upload Video</h3>
+        <h3 className="text-center masala-3">Upload Product</h3>
         <form onSubmit={hadleSubmit}>
         <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
           <div className="form-group">
             <input
               type="text"
-              placeholder="Title"
+              placeholder="Name"
               name="name"
               id="name"
               className="form-control"
@@ -62,7 +68,7 @@ const UploadForm = ({ getAllMedias }) => {
           <div className="form-group">
             <input
               type="text"
-              placeholder="Description"
+              placeholder="Enter price"
               name="description"
               id="Description"
               className="form-control"

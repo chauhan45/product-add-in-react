@@ -31,7 +31,7 @@ export const Dashboard = ({ setLoginUser }) => {
       <div> <br />
         <h1 className='text-center text-danger masala-2'>Dashboard</h1>
       </div>
-      <div className="row">
+      {/* <div className="row">
 
         <div
           className="card "
@@ -62,7 +62,7 @@ export const Dashboard = ({ setLoginUser }) => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className='logout'>
         <button className='btn btn-danger ' onClick={() => setLoginUser({})} > Logout</button>
       </div>

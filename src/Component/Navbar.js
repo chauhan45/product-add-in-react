@@ -18,17 +18,17 @@ export const Navbar = ({setLoginUser}) => {
                  <h4 className='masala'> FENTA VIDEO</h4>
                     <ul class="navbar-nav ml-4 ms-auto font-weight-bold  ">
                     <li class="nav-item">
-                    <Link class="nav-link text-danger" to="Home" >Home</Link>
+                    <Link class="nav-link text-danger" to="home" >Home</Link>
                     </li>
                     <li class="nav-item">
                             <Link class="nav-link" to="contact">Contact</Link>
                         </li>
                         <li class="nav-item">
-                            <Link class="nav-link" to="Login">Login</Link>
+                            <Link class="nav-link" to="login">Login</Link>
                         </li>
                         
                         <li class="nav-item">
-                            <Link class="nav-link" to="Signup">Signup</Link>
+                            <Link class="nav-link" to="signup">Signup</Link>
                         </li>
                         
                         {/* <li class="nav-item">

@@ -23,6 +23,7 @@ import { Video } from './Component/Video';
 import { Viewproduct } from './components/Viewproduct';
 import HomeScreen from './screen/HomeScreen';
 import ProductCard from './ComponentProduct/ProductCard';
+import  Showproduct  from './Viewproduct/Showproduct';
 
 function App() {
   const [medias, setMedias] = useState([]);
@@ -43,7 +44,7 @@ function App() {
       .catch((error) => {
         setMedias([]);
         console.log(error);
-        alert("Error happened!");
+     
       });
   };
 
@@ -62,7 +63,7 @@ function App() {
           </Route> 
           <Route path="/login" component={Login} > <Login
           setLoginUser={setLoginUser} /> </Route>
-           <Route path="/Home" component={Home} > <Home medias={medias}  /> </Route>
+           <Route path="/home" component={Home} > <Home medias={medias}  /> </Route>
           <Route path="/signup" component={Signup} > <Signup /></Route>
           <Route path="/dashboard" component={Dashboard} > </Route>
           <Route path="/Datashow" component={Datashow} > <Datashow /> </Route>
@@ -77,6 +78,8 @@ function App() {
           <Route path="/video" component={Video} > <Video/> </Route>
           <Route path="/viewproduct" component={Viewproduct} > <Viewproduct/> </Route>
           <Route path="/HomeScreen" component={HomeScreen} > <HomeScreen/> </Route>
+          <Route path="/Showproduct" component={Showproduct} > <Showproduct medias={medias}/> </Route>
+
 
           
           

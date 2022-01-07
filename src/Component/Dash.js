@@ -30,9 +30,17 @@ const Dash = () => {
                         <li class="nav-item">
                             {/* <button className='btn btn-info ms-5'><NavLink class="nav-link" to="/Product">Add Product</NavLink></button> */}
                         </li>
-
+                        
                         <li class="nav-item">
-                            <button type="button" className='btn btn-primary ms-5 btn_color'><NavLink class="nav-link" to="/HomeScreen">View Product</NavLink></button>
+                            <button type="button" className='btn   ms-5  btn-sm'><NavLink class="nav-link btn-color" to="/Showproduct">Show Product</NavLink></button>
+                            
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" className='btn  ms-5  btn-sm'><NavLink class="nav-link btn-color" to="/uploadform">Add Product</NavLink></button>
+                            
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" className='btn  ms-5  btn-sm'><NavLink class="nav-link btn-color" to="/HomeScreen">View Product</NavLink></button>
                             
                         </li>
                     </ul>

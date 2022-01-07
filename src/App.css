@@ -185,3 +185,9 @@ span.Description {
     font-weight: 600;
     color: black;
 }
+.btn-color{
+    color: #fff !important ;
+    background-color: black;
+    border-radius: 5px;
+    
+}
