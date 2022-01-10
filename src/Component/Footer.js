@@ -39,7 +39,7 @@ export const Footer = () => {
                                 <img src={logo} alt="..." />
                             </Link>
                             <h6 class="text-uppercase font-weight-bold">
-                            FENTA VIDEO</h6>
+                            FENTA PRODUCT</h6>
                             <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto hr"
                             />
                             <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
@@ -98,7 +98,7 @@ export const Footer = () => {
                     </div>
                 </div>
                 <div class="footer-copyright text-center py-3">© 2020 Copyright:
-                    <a href="#">FENTA VIDEO</a>
+                    <a href="#">FENTA PRODUCT</a>
                 </div>
             </footer>
         </>

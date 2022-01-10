@@ -15,7 +15,7 @@ export const Navbar = ({setLoginUser}) => {
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                 <h4 className='masala'> FENTA VIDEO</h4>
+                 <h4 className='masala'> FENTACART</h4>
                     <ul class="navbar-nav ml-4 ms-auto font-weight-bold  ">
                     <li class="nav-item">
                     <Link class="nav-link text-danger" to="home" >Home</Link>

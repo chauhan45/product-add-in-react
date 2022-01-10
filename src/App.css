@@ -191,3 +191,18 @@ span.Description {
     border-radius: 5px;
     
 }
+.product {
+    font-family: sans-serif;
+    font-weight: 900;
+}
+.blur{
+    filter: blur(1.5px);
+    height: 400px;
+    opacity: 1px;
+    
+}
+.textt{
+    font-family: sans-serif;
+    font-weight: 900;
+    color: #332b2b; 
+}
