@@ -3,6 +3,7 @@ const mediaController = require("../controllers/mediaController");
 const multer = require("multer");
 const fs = require("fs");
 const path = require("path");
+// const { default: Laptop } = require("../../video-product/src/Category/Laptop");
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
@@ -39,6 +40,7 @@ const router = express.Router();
 //get all media
 router.get("/all", mediaController.getAll);
 
+
 //post create new media
 router.post(
   "/create",
@@ -50,5 +52,23 @@ router.post(
   ]),
   mediaController.create
 );
+
+
+// Laptop
+router.get("/Laptop", mediaController.getAll1);
+
+// Laptop
+
+// mobile----------------
+
+router.get("/Mobile", mediaController.getAll2);
+
+// mobile end------------
+
+// watches-----------------
+
+router.get("/Watches", mediaController.getAll3);
+
+// watches end-------------
 
 module.exports = router;
